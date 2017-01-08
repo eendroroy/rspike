@@ -1,4 +1,4 @@
-# rspikes [![Gem Version](https://badge.fury.io/rb/rspikes.svg)](https://badge.fury.io/rb/rspikes) [![Build Status](https://travis-ci.org/eendroroy/rspikes.svg?branch=master)](https://travis-ci.org/eendroroy/rspikes)
+# rspikes [![Gem Version](https://badge.fury.io/rb/rspikes@2x.png)](https://badge.fury.io/rb/rspikes) [![Build Status](https://travis-ci.org/eendroroy/rspikes.svg?branch=master)](https://travis-ci.org/eendroroy/rspikes)
 
 A tool to display bar-chart anywhere.
 
