@@ -1,4 +1,4 @@
-# Rspikes
+# rspikes [![Gem Version](https://badge.fury.io/rb/rspikes.svg)](https://badge.fury.io/rb/rspikes)
 
 A tool to display bar-chart anywhere.
 
