@@ -1,0 +1,19 @@
+#!ruby
+
+require 'optparse'
+require 'rspikes'
+
+data = []
+rows = 1
+
+OptionParser.new do |opts|
+  opts.on('-l l') do |v|
+    rows = v.to_i
+  end
+end.parse!
+
+ARGV.each do |arg|
+  data << Integer(arg)
+end
+
+puts Rspikes.spike(data, rows=rows)
