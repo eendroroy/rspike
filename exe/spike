@@ -16,4 +16,4 @@ ARGV.each do |arg|
   data << Integer(arg)
 end
 
-puts Rspikes.spike(data, rows=rows)
+puts Rspikes.spike(data, rows)
