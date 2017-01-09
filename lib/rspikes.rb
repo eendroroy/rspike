@@ -14,6 +14,8 @@ module Rspikes
       spikes
     end
 
+    private
+
     BAR_INDEX = 8
     BARS = [' ', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'].freeze
 
