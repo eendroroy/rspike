@@ -47,17 +47,21 @@ module Rspikes
       end
     end
 
+    def spike_column(spiked, column, rows)
+      full_rows = column / BAR_INDEX
+      fractional_val = column - (full_rows * BAR_INDEX)
+
+      (0..(full_rows - 1)).each { |full_row| spiked[full_row] << BAR_INDEX }
+      spiked[full_rows] << fractional_val if full_rows < rows
+      ((full_rows + 1)..(rows - 1)).each { |rest_row| spiked[rest_row] << 0 }
+    end
+
     def spike_data(data, rows = 1)
       spiked = []
       (1..rows).each { spiked << [] }
 
-      data.each do |s|
-        full_rows = s / BAR_INDEX
-        fractional_val = s - (full_rows * BAR_INDEX)
-
-        (0..(full_rows - 1)).each { |full_row| spiked[full_row] << BAR_INDEX }
-        spiked[full_rows] << fractional_val if full_rows < rows
-        ((full_rows + 1)..(rows - 1)).each { |rest_row| spiked[rest_row] << 0 }
+      data.each do |column|
+        spike_column(spiked, column, rows)
       end
 
       spiked
