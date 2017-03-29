@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['indrajit']
   spec.email         = ['eendroroy@gmail.com']
   spec.summary       = 'rspikes'
-  spec.description   = 'A tool to display bar-chart anywhere.'
+  spec.description   = 'A tool to display sparkline anywhere.'
   spec.homepage      = 'http://rubygems.org/gems/rspikes'
   spec.license       = 'MIT'
   unless spec.respond_to?(:metadata)

@@ -35,6 +35,30 @@ in commandline
 
     $ spike 1 2 3 4 5 6
     $ spike -l 3  1 2 3 4 5 6
+    
+read from stdin
+
+    $ spike
+    > 2 4 3 7 2 9
+    > # press Ctrl-D
+    ▂▄▃▆▂█
+
+#### use with git
+commit count per day:
+    
+    $ git log | grep Date | awk '{print " : "$4" "$3" "$6}' | uniq -c | awk '{print $1}' | spike
+    
+    ▁▄▅▁▁▂▁▁▂▄▄▇▃█▁▁▁▁▁▁▁
+
+commit count per author
+    
+    $ git log | grep Author | awk '{print $NF}' | sort | uniq -c | awk '{print $1}' | spike -l4
+    
+    █
+    █
+    █  ▁
+    █▅▁█▅▂▆▄█
+
 
 ## Development
 
