@@ -4,16 +4,31 @@ require 'optparse'
 require 'rspikes'
 
 data = []
-rows = 1
+rows = nil
 
-OptionParser.new do |opts|
-  opts.on('-l l') do |v|
-    rows = v.to_i
+def read_from_stdin
+  data_ = []
+  $stdin.read.strip.split(/\s+/).each do |d|
+    data_ << Float(d)
   end
-end.parse!
-
-ARGV.each do |arg|
-  data << Float(arg)
+  data_
 end
 
-puts Rspikes.spike(data, rows)
+if ARGV.empty?
+  data = read_from_stdin
+else
+  OptionParser.new do |opts|
+    opts.on('-l l') do |v|
+      rows = v.to_i
+    end
+  end.parse!
+  if ARGV.empty?
+    data = read_from_stdin
+  else
+    ARGV.each do |arg|
+      data << Float(arg)
+    end
+  end
+end
+
+puts Rspikes.spike(data, (rows.nil? ? 1 : rows))
