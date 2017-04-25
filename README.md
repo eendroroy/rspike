@@ -4,6 +4,8 @@
 [![Gem Version](https://badge.fury.io/rb/rspikes.svg)](https://badge.fury.io/rb/rspikes) 
 [![Build Status](https://travis-ci.org/eendroroy/rspikes.svg?branch=master)](https://travis-ci.org/eendroroy/rspikes)
 [![Code Climate](https://codeclimate.com/github/eendroroy/rspikes/badges/gpa.svg)](https://codeclimate.com/github/eendroroy/rspikes)
+[![codecov](https://codecov.io/gh/eendroroy/rspikes/branch/master/graph/badge.svg)](https://codecov.io/gh/eendroroy/rspikes)
+
 
 A tool to display bar-chart anywhere.
 
