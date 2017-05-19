@@ -1,7 +1,8 @@
 # rspikes 
 
 [![Join the chat at https://gitter.im/eendroroy/rspikes](https://badges.gitter.im/eendroroy/rspikes.svg)](https://gitter.im/eendroroy/rspikes?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Gem Version](https://badge.fury.io/rb/rspikes.svg)](https://badge.fury.io/rb/rspikes) 
+[![Gem Version](https://badge.fury.io/rb/rspikes.svg)](https://rubygems.org/gems/rspikes) 
+[![Downloads](https://img.shields.io/gem/dt/rspikes.svg)](https://rubygems.org/gems/rspikes)
 [![Build Status](https://travis-ci.org/eendroroy/rspikes.svg?branch=master)](https://travis-ci.org/eendroroy/rspikes)
 [![Code Climate](https://codeclimate.com/github/eendroroy/rspikes/badges/gpa.svg)](https://codeclimate.com/github/eendroroy/rspikes)
 [![codecov](https://codecov.io/gh/eendroroy/rspikes/branch/master/graph/badge.svg)](https://codecov.io/gh/eendroroy/rspikes)
